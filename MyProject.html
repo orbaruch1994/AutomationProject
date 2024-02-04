@@ -18,7 +18,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="MyProject.html">My Project</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="std.html">STD</a></li>
             </ul>
         </div>
         <br><br>
@@ -34,6 +33,61 @@
                     <source src="FinalProject.mp4" type="video/mp4">
                     <source src="video.ogg" type="video/ogg">
                 </video>
+            </div>  
+            <button style="margin-top: 20px; cursor: pointer; width: 250px; letter-spacing: 2px;" class="show" onclick="hiddenfunction()">
+                SHOW PROJECT STD
+            </button>
+            <div id="hidden" style="display: none;">
+            <h3 style="text-decoration: underline;">Login Test</h3>
+            <div style="text-align: left;">
+                <p>a. Login with incorrect details</p>
+                <p>b. Login with correct details</p>
+                <p>c. logout</p>
+                <p>expected result - return to homepage with menu title - "Login or Register"</p>
+            </div>
+                <h3 style="text-decoration: underline;">Buy Product Test</h3>
+                <div style="text-align: left;">
+                    <p>a. Login</p>
+                    <p>b. Choose Category</p>
+                    <p>c. Add product to cart with quantity - 3 </p>
+                    <p>d. Return to category and add another product</p>
+                    <p>e. Checkout</p>
+                    <p>f. Confirm orde</p>
+                    <p>expected result - purchase success and sending mail</p>
+                </div>
+                <h3 style="text-decoration: underline;">Update cart details</h3>
+                <div style="text-align: left;">
+                    <p>a. Login</p>
+                    <p>b. Choose Category</p>
+                    <p>c. Add product to cart with quantity - 3</p>
+                    <p>d. Return to category and add another product</p>
+                    <p>e. Go to Cart</p>
+                    <p>f. Change quantity of the products</p>
+                    <p>g. Remove one product</p>
+                    <p>h. Click update</p>
+                    <p>expected result - cart updated with new details</p>
+                </div>
+                <h3 style="text-decoration: underline;">Search and Buy Test</h3>
+                <div style="text-align: left;">
+                    <p>a. Login</p>
+                    <p>b. Search product from search field</p>
+                    <p>c. Choose Product</p>
+                    <p>d. Add to cart</p>
+                    <p>e. Checkout</p>
+                    <p>f. Confirm order</p>
+                    <p>expected result - purchase success and sending mail</p>
+                </div>
+                <h3 style="text-decoration: underline;">Home Page Purchase</h3>
+                <div style="text-align: left;">
+                    <p>a. Choose product from home page</p>
+                    <p>b. Add to cart</p>
+                    <p>c. Continue shopping</p>
+                    <p>d. Go to Home Page</p>
+                    <p>e. Add product to the cart from Home Page</p>
+                    <p>f. CheckOut</p>
+                    <p>g. Confirm order</p>
+                    <p>expected result - purchase success and sending mail</p>
+                </div>
             </div>
             <div>
                 <a href="https://github.com/orbaruch1994/FinalProject.git" target="_blank"><button id="selenium" class="btn" style="width: 400px;"><span></span>Check out My Project - Click Here!</button></a>
@@ -44,5 +98,17 @@
 <div class="box1"></div>
 <div class="box1"></div>
 <br>
+<script>
+    function hiddenfunction() {
+        var x = 
+        document.getElementById("hidden");
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+</script>
 </body>
 </html>
