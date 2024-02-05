@@ -34,7 +34,7 @@
                     <source src="video.ogg" type="video/ogg">
                 </video>
             </div>  
-            <button style="margin-top: 20px; cursor: pointer; width: 250px; letter-spacing: 2px;" class="show" onclick="hiddenfunction()">
+            <button id="show" style="margin-top: 20px; cursor: pointer; width: 250px; letter-spacing: 2px;" class="show" onclick="hiddenfunction()">
                 SHOW PROJECT STD
             </button>
             <div id="hidden" style="display: none;">
@@ -102,10 +102,14 @@
     function hiddenfunction() {
         var x = 
         document.getElementById("hidden");
+        var y = 
+        document.getElementById("show")
         if (x.style.display === 'none') {
             x.style.display = 'block';
+            y.innerHTML = "SHOW LESS"
         } else {
             x.style.display = "none";
+            y.innerHTML = "SHOW PROJECT STD"
         }
     }
 
