@@ -373,8 +373,8 @@ a {
 .bottom {
     border-radius: 10px;
     position: relative;
-    height: 100px;
-    margin-top: -50px;
+    height: 20px;
+    margin-top: -40px;
     clear: both;
     text-align: center;
     color: white;
